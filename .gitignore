@@ -1,0 +1,13 @@
+# Excluir carpetas de compilación (Binarios)
+/[Bb]in/
+/[Oo]bj/
+
+# Excluir la caché interna y configuraciones de Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Excluir reportes temporales o capturas de pantalla si usas ExtentReports
+[Tt]est[Rr]esults/
