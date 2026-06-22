@@ -57,5 +57,17 @@ namespace Practica_1.PageObject
         //{
 
         //}
+        protected void LimpiarCampo(By localizador, string nuevoTexto)
+        {
+            IWebElement elemento = EncontrarElemento(localizador);
+
+            elemento.Clear();
+
+            elemento.SendKeys(Keys.Control + "a");
+            elemento.SendKeys(Keys.Backspace);
+
+            elemento.SendKeys(nuevoTexto);
+        }
+
     }
 }
